@@ -1,6 +1,7 @@
 import { Filter, KanbanSquareIcon, LayoutDashboardIcon, TicketIcon } from "lucide-react";
 import MyComponent from "./components/page";
 import TicketComponent from "./components/tickets/page";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
     <div className="w-80 h-screen bg-white p-8 ">
       <div className=''>
         <button className="h-10 bg-green-500 hover:bg-green-400 px-8  rounded-2xl text-white font-semibold">
-          ABRIR CHAMADO
+         <Link href="/open">ABRIR CHAMADO</Link>
         </button>
 
         <div className='pt-4'>

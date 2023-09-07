@@ -15,7 +15,6 @@ export default function TicketComponent() {
                 console.error("Erro ao obter os dados:", error);
             }
         };
-
         fetchData();
     }, []);
 
@@ -36,7 +35,7 @@ export default function TicketComponent() {
                                 <div className="flex flex-col">
                                     <span className="text-sm text-slate-700 font-semibold">{item.title}</span>
                                     <span className="text-sm text-slate-600 pt-2">Solicitante</span>
-                                    <span className="text-sm">{item.requerente.name}</span>
+                                    <span className="text-sm">{item.name}</span>
                                     <span className="text-sm text-slate-600 pt-2">Abertura</span>
                                     <span className="text-sm">{item.formattedDatetime}</span>
                                     <span className="text-sm text-slate-600 pt-2">Atribuido</span>
